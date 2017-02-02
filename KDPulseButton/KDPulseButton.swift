@@ -16,6 +16,8 @@ import UIKit
     private var animationGroup = CAAnimationGroup()
     
     @IBInspectable var pulseColor: UIColor = UIColor.gray
+    
+    @IBInspectable var pulseDuration: CGFloat = 0.5
 
     @IBInspectable var cornerRadius: CGFloat {
         get {
@@ -36,8 +38,6 @@ import UIKit
             layer.backgroundColor = newValue.cgColor
         }
     }
-    
-    @IBInspectable var pulseDuration: CGFloat = 0.5
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesEnded(touches, with: event)
