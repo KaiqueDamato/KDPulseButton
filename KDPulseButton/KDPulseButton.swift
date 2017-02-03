@@ -10,24 +10,15 @@ import UIKit
 
 @IBDesignable class KDPulseButton: UIButton {
     
-    private var pulse = CAShapeLayer()
     private var mainLayer = CAShapeLayer()
     
     private var animationGroup = CAAnimationGroup()
     
     @IBInspectable var pulseColor: UIColor = UIColor.gray
     
+    @IBInspectable var pulseRadius: CGFloat = 1
+    
     @IBInspectable var pulseDuration: CGFloat = 0.5
-
-    @IBInspectable var cornerRadius: CGFloat {
-        get {
-            return layer.cornerRadius
-        }
-        
-        set {
-            layer.cornerRadius = newValue
-        }
-    }
     
     @IBInspectable var buttonColor: UIColor {
         get {
@@ -39,10 +30,35 @@ import UIKit
         }
     }
     
+    @IBInspectable var cornerRadius: CGFloat {
+        get {
+            return layer.cornerRadius
+        }
+        
+        set {
+            layer.cornerRadius = newValue
+        }
+    }
+    
+    override func draw(_ rect: CGRect) {
+        super.draw(rect)
+        setup()
+    }
+    
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesEnded(touches, with: event)
-        setup()
-        createAnimationGroup()
+        
+        let pulse = createPulse()
+        
+        self.layer.insertSublayer(pulse, below: self.mainLayer)
+    
+        DispatchQueue.global(qos: DispatchQoS.QoSClass.default).async {
+            self.createAnimationGroup()
+            
+            DispatchQueue.main.async {
+                pulse.add(self.animationGroup, forKey: "pulse")
+            }
+        }
     }
     
     func setup() {
@@ -53,7 +69,10 @@ import UIKit
         mainLayer.zPosition = -1
         
         self.layer.addSublayer(mainLayer)
-        
+    }
+    
+    func createPulse() -> CAShapeLayer {
+        let pulse = CAShapeLayer()
         pulse.backgroundColor = pulseColor.cgColor
         pulse.contentsScale = UIScreen.main.scale
         pulse.bounds = self.bounds
@@ -61,22 +80,20 @@ import UIKit
         pulse.position = CGPoint(x: frame.width/2, y: frame.height/2)
         pulse.zPosition = -2
         pulse.opacity = 0
-
-        self.layer.insertSublayer(pulse, below: self.mainLayer)
+        
+        return pulse
     }
     
     func createAnimationGroup() {
         animationGroup.animations = [createScaleAnimation(), createOpacityAnimation()]
         animationGroup.duration = CFTimeInterval(pulseDuration)
-        
-        pulse.add(animationGroup, forKey: "pulse")
     }
     
     func createScaleAnimation() -> CABasicAnimation {
         let scaleAnimation = CABasicAnimation(keyPath: "transform.scale.xy")
     
         scaleAnimation.fromValue = 1
-        scaleAnimation.toValue = 1.3
+        scaleAnimation.toValue = (pulseRadius/10) + 1.0
         scaleAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
         
         return scaleAnimation
