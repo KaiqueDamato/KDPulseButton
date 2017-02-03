@@ -61,7 +61,7 @@ import UIKit
         }
     }
     
-    func setup() {
+    private func setup() {
         mainLayer.backgroundColor = buttonColor.cgColor
         mainLayer.bounds = self.bounds
         mainLayer.cornerRadius = cornerRadius
@@ -71,7 +71,7 @@ import UIKit
         self.layer.addSublayer(mainLayer)
     }
     
-    func createPulse() -> CAShapeLayer {
+    private func createPulse() -> CAShapeLayer {
         let pulse = CAShapeLayer()
         pulse.backgroundColor = pulseColor.cgColor
         pulse.contentsScale = UIScreen.main.scale
@@ -84,12 +84,12 @@ import UIKit
         return pulse
     }
     
-    func createAnimationGroup() {
+    private func createAnimationGroup() {
         animationGroup.animations = [createScaleAnimation(), createOpacityAnimation()]
         animationGroup.duration = CFTimeInterval(pulseDuration)
     }
     
-    func createScaleAnimation() -> CABasicAnimation {
+    private func createScaleAnimation() -> CABasicAnimation {
         let scaleAnimation = CABasicAnimation(keyPath: "transform.scale.xy")
     
         scaleAnimation.fromValue = 1
@@ -99,7 +99,7 @@ import UIKit
         return scaleAnimation
     }
     
-    func createOpacityAnimation() -> CAKeyframeAnimation {
+    private func createOpacityAnimation() -> CAKeyframeAnimation {
         let opacityAnimation = CAKeyframeAnimation(keyPath: "opacity")
         
         opacityAnimation.values = [0.8, 0.4, 0]
