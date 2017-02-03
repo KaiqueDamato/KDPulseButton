@@ -9,8 +9,6 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    @IBOutlet var button: KDPulseButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
