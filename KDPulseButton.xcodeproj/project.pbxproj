@@ -7,76 +7,110 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EC55D1351E42988D0029D25A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC55D1341E42988D0029D25A /* AppDelegate.swift */; };
-		EC55D1371E42988D0029D25A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC55D1361E42988D0029D25A /* ViewController.swift */; };
-		EC55D13A1E42988D0029D25A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC55D1381E42988D0029D25A /* Main.storyboard */; };
-		EC55D13C1E42988D0029D25A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC55D13B1E42988D0029D25A /* Assets.xcassets */; };
-		EC55D13F1E42988D0029D25A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC55D13D1E42988D0029D25A /* LaunchScreen.storyboard */; };
-		EC55D1471E4298AC0029D25A /* KDPulseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC55D1461E4298AC0029D25A /* KDPulseButton.swift */; };
+		EC17F76A1E61416B005FC5CF /* KDPulseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC17F7691E61416B005FC5CF /* KDPulseButton.swift */; };
+		EC240E191E61249200B60423 /* KDPulseButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC240E0F1E61249200B60423 /* KDPulseButton.framework */; };
+		EC240E1E1E61249200B60423 /* KDPulseButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC240E1D1E61249200B60423 /* KDPulseButtonTests.swift */; };
+		EC240E201E61249200B60423 /* KDPulseButton.h in Headers */ = {isa = PBXBuildFile; fileRef = EC240E121E61249200B60423 /* KDPulseButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		EC240E1A1E61249200B60423 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC240E061E61249200B60423 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC240E0E1E61249200B60423;
+			remoteInfo = KDPulseButton;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		EC55D1311E42988D0029D25A /* KDPulseButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KDPulseButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC55D1341E42988D0029D25A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EC55D1361E42988D0029D25A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EC55D1391E42988D0029D25A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		EC55D13B1E42988D0029D25A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		EC55D13E1E42988D0029D25A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		EC55D1401E42988D0029D25A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EC55D1461E4298AC0029D25A /* KDPulseButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDPulseButton.swift; sourceTree = "<group>"; };
+		EC17F7691E61416B005FC5CF /* KDPulseButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDPulseButton.swift; sourceTree = "<group>"; };
+		EC240E0F1E61249200B60423 /* KDPulseButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KDPulseButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC240E121E61249200B60423 /* KDPulseButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KDPulseButton.h; sourceTree = "<group>"; };
+		EC240E131E61249200B60423 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC240E181E61249200B60423 /* KDPulseButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KDPulseButtonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC240E1D1E61249200B60423 /* KDPulseButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDPulseButtonTests.swift; sourceTree = "<group>"; };
+		EC240E1F1E61249200B60423 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		EC55D12E1E42988D0029D25A /* Frameworks */ = {
+		EC240E0B1E61249200B60423 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EC240E151E61249200B60423 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC240E191E61249200B60423 /* KDPulseButton.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		EC55D1281E42988D0029D25A = {
+		EC240E051E61249200B60423 = {
 			isa = PBXGroup;
 			children = (
-				EC55D1331E42988D0029D25A /* KDPulseButton */,
-				EC55D1321E42988D0029D25A /* Products */,
+				EC240E111E61249200B60423 /* KDPulseButton */,
+				EC240E1C1E61249200B60423 /* KDPulseButtonTests */,
+				EC240E101E61249200B60423 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		EC55D1321E42988D0029D25A /* Products */ = {
+		EC240E101E61249200B60423 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EC55D1311E42988D0029D25A /* KDPulseButton.app */,
+				EC240E0F1E61249200B60423 /* KDPulseButton.framework */,
+				EC240E181E61249200B60423 /* KDPulseButtonTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EC55D1331E42988D0029D25A /* KDPulseButton */ = {
+		EC240E111E61249200B60423 /* KDPulseButton */ = {
 			isa = PBXGroup;
 			children = (
-				EC55D1341E42988D0029D25A /* AppDelegate.swift */,
-				EC55D1361E42988D0029D25A /* ViewController.swift */,
-				EC55D1381E42988D0029D25A /* Main.storyboard */,
-				EC55D1461E4298AC0029D25A /* KDPulseButton.swift */,
-				EC55D13B1E42988D0029D25A /* Assets.xcassets */,
-				EC55D13D1E42988D0029D25A /* LaunchScreen.storyboard */,
-				EC55D1401E42988D0029D25A /* Info.plist */,
+				EC17F7691E61416B005FC5CF /* KDPulseButton.swift */,
+				EC240E121E61249200B60423 /* KDPulseButton.h */,
+				EC240E131E61249200B60423 /* Info.plist */,
 			);
 			path = KDPulseButton;
 			sourceTree = "<group>";
 		};
+		EC240E1C1E61249200B60423 /* KDPulseButtonTests */ = {
+			isa = PBXGroup;
+			children = (
+				EC240E1D1E61249200B60423 /* KDPulseButtonTests.swift */,
+				EC240E1F1E61249200B60423 /* Info.plist */,
+			);
+			path = KDPulseButtonTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		EC240E0C1E61249200B60423 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC240E201E61249200B60423 /* KDPulseButton.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		EC55D1301E42988D0029D25A /* KDPulseButton */ = {
+		EC240E0E1E61249200B60423 /* KDPulseButton */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EC55D1431E42988D0029D25A /* Build configuration list for PBXNativeTarget "KDPulseButton" */;
+			buildConfigurationList = EC240E231E61249200B60423 /* Build configuration list for PBXNativeTarget "KDPulseButton" */;
 			buildPhases = (
-				EC55D12D1E42988D0029D25A /* Sources */,
-				EC55D12E1E42988D0029D25A /* Frameworks */,
-				EC55D12F1E42988D0029D25A /* Resources */,
+				EC240E0A1E61249200B60423 /* Sources */,
+				EC240E0B1E61249200B60423 /* Frameworks */,
+				EC240E0C1E61249200B60423 /* Headers */,
+				EC240E0D1E61249200B60423 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -84,91 +118,114 @@
 			);
 			name = KDPulseButton;
 			productName = KDPulseButton;
-			productReference = EC55D1311E42988D0029D25A /* KDPulseButton.app */;
-			productType = "com.apple.product-type.application";
+			productReference = EC240E0F1E61249200B60423 /* KDPulseButton.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EC240E171E61249200B60423 /* KDPulseButtonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC240E261E61249200B60423 /* Build configuration list for PBXNativeTarget "KDPulseButtonTests" */;
+			buildPhases = (
+				EC240E141E61249200B60423 /* Sources */,
+				EC240E151E61249200B60423 /* Frameworks */,
+				EC240E161E61249200B60423 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC240E1B1E61249200B60423 /* PBXTargetDependency */,
+			);
+			name = KDPulseButtonTests;
+			productName = KDPulseButtonTests;
+			productReference = EC240E181E61249200B60423 /* KDPulseButtonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		EC55D1291E42988D0029D25A /* Project object */ = {
+		EC240E061E61249200B60423 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Kaique Damato";
 				TargetAttributes = {
-					EC55D1301E42988D0029D25A = {
+					EC240E0E1E61249200B60423 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 66BPT5DT27;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+					EC240E171E61249200B60423 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 66BPT5DT27;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = EC55D12C1E42988D0029D25A /* Build configuration list for PBXProject "KDPulseButton" */;
+			buildConfigurationList = EC240E091E61249200B60423 /* Build configuration list for PBXProject "KDPulseButton" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 			);
-			mainGroup = EC55D1281E42988D0029D25A;
-			productRefGroup = EC55D1321E42988D0029D25A /* Products */;
+			mainGroup = EC240E051E61249200B60423;
+			productRefGroup = EC240E101E61249200B60423 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EC55D1301E42988D0029D25A /* KDPulseButton */,
+				EC240E0E1E61249200B60423 /* KDPulseButton */,
+				EC240E171E61249200B60423 /* KDPulseButtonTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		EC55D12F1E42988D0029D25A /* Resources */ = {
+		EC240E0D1E61249200B60423 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC55D13F1E42988D0029D25A /* LaunchScreen.storyboard in Resources */,
-				EC55D13C1E42988D0029D25A /* Assets.xcassets in Resources */,
-				EC55D13A1E42988D0029D25A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC240E161E61249200B60423 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		EC55D12D1E42988D0029D25A /* Sources */ = {
+		EC240E0A1E61249200B60423 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC55D1371E42988D0029D25A /* ViewController.swift in Sources */,
-				EC55D1471E4298AC0029D25A /* KDPulseButton.swift in Sources */,
-				EC55D1351E42988D0029D25A /* AppDelegate.swift in Sources */,
+				EC17F76A1E61416B005FC5CF /* KDPulseButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC240E141E61249200B60423 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC240E1E1E61249200B60423 /* KDPulseButtonTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		EC55D1381E42988D0029D25A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EC55D1391E42988D0029D25A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
+/* Begin PBXTargetDependency section */
+		EC240E1B1E61249200B60423 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC240E0E1E61249200B60423 /* KDPulseButton */;
+			targetProxy = EC240E1A1E61249200B60423 /* PBXContainerItemProxy */;
 		};
-		EC55D13D1E42988D0029D25A /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EC55D13E1E42988D0029D25A /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		EC55D1411E42988D0029D25A /* Debug */ = {
+		EC240E211E61249200B60423 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -191,6 +248,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -214,10 +272,13 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		EC55D1421E42988D0029D25A /* Release */ = {
+		EC240E221E61249200B60423 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -240,6 +301,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -255,33 +317,77 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		EC55D1441E42988D0029D25A /* Debug */ = {
+		EC240E241E61249200B60423 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 66BPT5DT27;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = KDPulseButton/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kaiquedamato.KDPulseButton;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		EC240E251E61249200B60423 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 66BPT5DT27;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = KDPulseButton/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaiquedamato.KDPulseButton;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		EC240E271E61249200B60423 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 66BPT5DT27;
+				INFOPLIST_FILE = KDPulseButtonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaiquedamato.KDPulseButtonTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		EC55D1451E42988D0029D25A /* Release */ = {
+		EC240E281E61249200B60423 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 66BPT5DT27;
-				INFOPLIST_FILE = KDPulseButton/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kaiquedamato.KDPulseButton;
+				INFOPLIST_FILE = KDPulseButtonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaiquedamato.KDPulseButtonTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -290,25 +396,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EC55D12C1E42988D0029D25A /* Build configuration list for PBXProject "KDPulseButton" */ = {
+		EC240E091E61249200B60423 /* Build configuration list for PBXProject "KDPulseButton" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EC55D1411E42988D0029D25A /* Debug */,
-				EC55D1421E42988D0029D25A /* Release */,
+				EC240E211E61249200B60423 /* Debug */,
+				EC240E221E61249200B60423 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EC55D1431E42988D0029D25A /* Build configuration list for PBXNativeTarget "KDPulseButton" */ = {
+		EC240E231E61249200B60423 /* Build configuration list for PBXNativeTarget "KDPulseButton" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EC55D1441E42988D0029D25A /* Debug */,
-				EC55D1451E42988D0029D25A /* Release */,
+				EC240E241E61249200B60423 /* Debug */,
+				EC240E251E61249200B60423 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC240E261E61249200B60423 /* Build configuration list for PBXNativeTarget "KDPulseButtonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC240E271E61249200B60423 /* Debug */,
+				EC240E281E61249200B60423 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = EC55D1291E42988D0029D25A /* Project object */;
+	rootObject = EC240E061E61249200B60423 /* Project object */;
 }
