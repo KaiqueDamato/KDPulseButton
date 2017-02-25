@@ -27,4 +27,4 @@ Kaique Pantosi D'amato, kaiquedamato@icloud.com.
 
 ## License
 
-KDPulseButton is available under the MIT license.
+KDPulseButton is available under the MIT license. See the [License](https://github.com/KaiqueDamato/KDPulseButton/blob/master/LICENSE) file for more info.
