@@ -5,7 +5,7 @@
 [![Xcode 8.0+](https://img.shields.io/badge/Xcode-8.0+-blue.svg?style=flat)](https://developer.apple.com/swift/)
 [![pod v1.0.0](https://img.shields.io/badge/pod-v0.0.1-blue.svg)](https://cocoapods.org)
 
-A Custom button that pulses
+A Custom button that pulses.
 # Demo
 ![alt tag](http://imgur.com/1UaWevH.gif)
 # Usage
@@ -23,7 +23,7 @@ I wish you a funny and happy coding. 🤓🚀
 
 ## Author
 
-Kaique Pantosi D'amato, kaiquedamato@icloud.com
+Kaique Pantosi D'amato, kaiquedamato@icloud.com.
 
 ## License
 
