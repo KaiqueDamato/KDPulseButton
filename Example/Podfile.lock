@@ -1,0 +1,21 @@
+PODS:
+  - KDPulseButton (1.0.0)
+
+DEPENDENCIES:
+  - KDPulseButton (from `https://github.com/KaiqueDamato/KDPulseButton.git`)
+
+EXTERNAL SOURCES:
+  KDPulseButton:
+    :git: https://github.com/KaiqueDamato/KDPulseButton.git
+
+CHECKOUT OPTIONS:
+  KDPulseButton:
+    :commit: dc9e976230d1e9e964054b9de604e20f187cef67
+    :git: https://github.com/KaiqueDamato/KDPulseButton.git
+
+SPEC CHECKSUMS:
+  KDPulseButton: 7f80aa347e25d35775f8e0ae87ebb47e6a76433b
+
+PODFILE CHECKSUM: 3108f82e4185dbae24f010504fe93203af8ac93b
+
+COCOAPODS: 1.2.0

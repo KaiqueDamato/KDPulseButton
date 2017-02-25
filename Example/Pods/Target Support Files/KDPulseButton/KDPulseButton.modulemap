@@ -1,0 +1,6 @@
+framework module KDPulseButton {
+  umbrella header "KDPulseButton-umbrella.h"
+
+  export *
+  module * { export * }
+}
