@@ -8,19 +8,19 @@
 
 import UIKit
 
-@IBDesignable class KDPulseButton: UIButton {
+@IBDesignable public class KDPulseButton: UIButton {
     
-    private var mainLayer = CAShapeLayer()
+    fileprivate var mainLayer = CAShapeLayer()
     
-    private var animationGroup = CAAnimationGroup()
+    fileprivate var animationGroup = CAAnimationGroup()
     
-    @IBInspectable var pulseColor: UIColor = UIColor.gray
+    @IBInspectable public var pulseColor: UIColor = UIColor.gray
     
-    @IBInspectable var pulseRadius: CGFloat = 1
+    @IBInspectable public var pulseRadius: CGFloat = 1
     
-    @IBInspectable var pulseDuration: CGFloat = 0.5
+    @IBInspectable public var pulseDuration: CGFloat = 0.5
     
-    @IBInspectable var buttonColor: UIColor {
+    @IBInspectable public var buttonColor: UIColor {
         get {
             return UIColor(cgColor: layer.backgroundColor ?? UIColor.white.cgColor)
         }
@@ -30,7 +30,7 @@ import UIKit
         }
     }
     
-    @IBInspectable var cornerRadius: CGFloat {
+    @IBInspectable public var cornerRadius: CGFloat {
         get {
             return layer.cornerRadius
         }
@@ -40,12 +40,21 @@ import UIKit
         }
     }
     
-    override func draw(_ rect: CGRect) {
+    public init(frame: CGRect, backgroundColor: UIColor) {
+        super.init(frame: frame)
+        buttonColor = backgroundColor
+    }
+    
+    required public init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    
+    override public func draw(_ rect: CGRect) {
         super.draw(rect)
         setup()
     }
     
-    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+    override public func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesEnded(touches, with: event)
         
         let pulse = createPulse()
@@ -61,7 +70,7 @@ import UIKit
         }
     }
     
-    private func setup() {
+    fileprivate func setup() {
         mainLayer.backgroundColor = buttonColor.cgColor
         mainLayer.bounds = self.bounds
         mainLayer.cornerRadius = cornerRadius
@@ -71,7 +80,7 @@ import UIKit
         self.layer.addSublayer(mainLayer)
     }
     
-    private func createPulse() -> CAShapeLayer {
+    fileprivate func createPulse() -> CAShapeLayer {
         let pulse = CAShapeLayer()
         pulse.backgroundColor = pulseColor.cgColor
         pulse.contentsScale = UIScreen.main.scale
@@ -84,12 +93,12 @@ import UIKit
         return pulse
     }
     
-    private func createAnimationGroup() {
+    fileprivate func createAnimationGroup() {
         animationGroup.animations = [createScaleAnimation(), createOpacityAnimation()]
         animationGroup.duration = CFTimeInterval(pulseDuration)
     }
     
-    private func createScaleAnimation() -> CABasicAnimation {
+    fileprivate func createScaleAnimation() -> CABasicAnimation {
         let scaleAnimation = CABasicAnimation(keyPath: "transform.scale.xy")
     
         scaleAnimation.fromValue = 1
@@ -99,7 +108,7 @@ import UIKit
         return scaleAnimation
     }
     
-    private func createOpacityAnimation() -> CAKeyframeAnimation {
+    fileprivate func createOpacityAnimation() -> CAKeyframeAnimation {
         let opacityAnimation = CAKeyframeAnimation(keyPath: "opacity")
         
         opacityAnimation.values = [0.8, 0.4, 0]
