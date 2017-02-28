@@ -6,8 +6,11 @@
 [![pod v1.0.0](https://img.shields.io/badge/pod-v1.0.0-blue.svg)](https://cocoapods.org)
 
 A Custom button that pulses.
+
 # Demo
-![alt tag](http://imgur.com/1UaWevH.gif)
+
+[![KDPulseButton.gif](https://gifyu.com/images/KDPulseButton.gif)](https://gifyu.com/image/SjCn)
+
 # Usage
 There are a few properties you may change:
 
