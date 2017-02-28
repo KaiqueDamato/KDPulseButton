@@ -47,6 +47,12 @@ import UIKit
     
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        setup()
+    }
+    
+    override public init(frame: CGRect) {
+        super.init(frame: frame)
+        setup()
     }
     
     override public func draw(_ rect: CGRect) {

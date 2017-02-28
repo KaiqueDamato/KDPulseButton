@@ -10,7 +10,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   KDPulseButton:
-    :commit: dc9e976230d1e9e964054b9de604e20f187cef67
+    :commit: 5936e6ddcbae59e4f6609979320646ea33b0dfd8
     :git: https://github.com/KaiqueDamato/KDPulseButton.git
 
 SPEC CHECKSUMS:
