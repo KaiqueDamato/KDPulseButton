@@ -9,7 +9,7 @@ A Custom button that pulses.
 
 # Demo
 
-[![KDPulseButton.gif](https://gifyu.com/images/KDPulseButton.gif)](https://gifyu.com/image/SjCn)
+[![KDPulseButton5d119.gif](https://gifyu.com/images/KDPulseButton5d119.gif)](https://gifyu.com/image/SjCJ)
 
 # Usage
 There are a few properties you may change:
