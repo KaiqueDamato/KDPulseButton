@@ -1,5 +1,5 @@
 PODS:
-  - KDPulseButton (1.0.0)
+  - KDPulseButton (1.0.1)
 
 DEPENDENCIES:
   - KDPulseButton (from `https://github.com/KaiqueDamato/KDPulseButton.git`)
@@ -10,11 +10,11 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   KDPulseButton:
-    :commit: 5936e6ddcbae59e4f6609979320646ea33b0dfd8
+    :commit: 2f33bfe47ebee1d0f5dcdf8c48c0ae0ec79c0bc6
     :git: https://github.com/KaiqueDamato/KDPulseButton.git
 
 SPEC CHECKSUMS:
-  KDPulseButton: 7f80aa347e25d35775f8e0ae87ebb47e6a76433b
+  KDPulseButton: 5afd6a4c1f2e38bda26c55822f27c724f326077c
 
 PODFILE CHECKSUM: 3108f82e4185dbae24f010504fe93203af8ac93b
 

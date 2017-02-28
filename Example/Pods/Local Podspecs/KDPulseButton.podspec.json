@@ -1,9 +1,9 @@
 {
   "name": "KDPulseButton",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "summary": "A custom button that pulses.",
   "description": "A simple button for customize your UI and to give a better use experience for your app.",
-  "homepage": "https://twitter.com/KaiqueDamato",
+  "homepage": "https://github.com/KaiqueDamato/KDPulseButton.git",
   "license": "MIT",
   "authors": {
     "Kaique Pantosi Damato": "kaiquedamato@icloud.com"
@@ -14,11 +14,11 @@
   },
   "source": {
     "git": "https://github.com/KaiqueDamato/KDPulseButton.git",
-    "tag": "1.0.0"
+    "tag": "1.0.1"
   },
   "source_files": [
     "KDPulseButton",
-    "KDPulseButton/**/*.{h,m}"
+    "KDPulseButton/**/*.{h,m,swift}"
   ],
   "pod_target_xcconfig": {
     "SWIFT_VERSION": "3"
